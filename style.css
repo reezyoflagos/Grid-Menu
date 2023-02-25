@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.image-grid{
+    --gap: 1rem;
+    --num-cols:4;
+    --row-height:300px;
+
+
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols),ifr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    align-items: center;
+}
+.image-grid > img{
+    width: 100%;
+    height: 100%;
+}
